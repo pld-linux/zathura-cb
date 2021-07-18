@@ -17,7 +17,7 @@ BuildRequires:	libarchive-devel
 BuildRequires:	meson >= 0.43
 BuildRequires:	ninja
 BuildRequires:	pkgconfig
-BuildRequires:	rpmbuild(macros) >= 1.727
+BuildRequires:	rpmbuild(macros) >= 1.736
 BuildRequires:	zathura-devel >= 0.3.8
 Requires(post,postun):	desktop-file-utils
 Requires:	girara >= 0.1.8
@@ -36,12 +36,12 @@ Wtyczka zathura-ps dodaje do zathury obsługę komiksów.
 %build
 %meson build
 
-%meson_build -C build
+%ninja_build -C build
 
 %install
 rm -rf $RPM_BUILD_ROOT
 
-%meson_install -C build
+%ninja_install -C build
 
 %clean
 rm -rf $RPM_BUILD_ROOT
