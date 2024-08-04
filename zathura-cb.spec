@@ -1,20 +1,20 @@
 Summary:	Comic book support for zathura
 Summary(pl.UTF-8):	Obsługa komiksów dla zathury
 Name:		zathura-cb
-Version:	0.1.10
-Release:	3
+Version:	0.1.11
+Release:	1
 License:	BSD-like
 Group:		Applications/Publishing
 Source0:	https://pwmt.org/projects/zathura-cb/download/%{name}-%{version}.tar.xz
-# Source0-md5:	770f74b775d64bfa438e5678ea859674
+# Source0-md5:	7bb8589ca179484ee0ab1923d4b02415
 URL:		https://pwmt.org/projects/zathura-cb/
 BuildRequires:	cairo-devel
-# C11
-BuildRequires:	gcc >= 6:4.7
+# C17
+BuildRequires:	gcc >= 6:8.1.0
 BuildRequires:	girara-devel >= 0.1.8
 BuildRequires:	glib2-devel >= 2.0
 BuildRequires:	libarchive-devel
-BuildRequires:	meson >= 0.43
+BuildRequires:	meson >= 0.61
 BuildRequires:	ninja
 BuildRequires:	pkgconfig
 BuildRequires:	rpmbuild(macros) >= 1.736
