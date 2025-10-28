@@ -4,12 +4,12 @@
 Summary:	Comic book support for zathura
 Summary(pl.UTF-8):	Obsługa komiksów dla zathury
 Name:		zathura-cb
-Version:	0.1.11
+Version:	0.1.12
 Release:	1
 License:	BSD-like
 Group:		Applications/Publishing
 Source0:	https://pwmt.org/projects/zathura-cb/download/%{name}-%{version}.tar.xz
-# Source0-md5:	7bb8589ca179484ee0ab1923d4b02415
+# Source0-md5:	586565c98463ba4218880ff9ace0cf29
 URL:		https://pwmt.org/projects/zathura-cb/
 BuildRequires:	cairo-devel
 # C17
